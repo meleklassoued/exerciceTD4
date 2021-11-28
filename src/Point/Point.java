@@ -1,19 +1,40 @@
 package Point;
 
 public class Point {
-    private float abscisse;
-    private float ordonée;
+    private float absicisses;
+    private float ordonnées;
 
-    public Point(float abscisse, float ordonée) {
-        this.abscisse = abscisse;
-        this.ordonée = ordonée;
+    public final Point(float x, float y) {
+        this.absicisses = x;
+        ordonnées = y;
+
     }
 
-    public void deplacer(float x, float y) {
+    public void deplacer(float a, float b) {
+        absicisses = absicisses + a;
+        ordonnées = ordonnées + b;
 
-        abscisse += x;
-        ordonée += y;
-        System.out.println("l'abscisse est " + abscisse + "et L'ordonnee est " + ordonée);
     }
+
+    public void afficher() {
+        System.out.println("l absciesses est " + absicisses + "lordonne est " + ordonnées);
+    }
+
+    /*
+     * ! --------------------------- constructeur ekher ---------------------------
+     */
+    public Point() {
+
+    }
+
+    public void setabsicces(float Z) {
+        this.absicisses = Z;
+
+    }
+
+    public float getAbsicces() {
+        return absicisses;
+    }
+    // public boolean compareTo()
 
 }
